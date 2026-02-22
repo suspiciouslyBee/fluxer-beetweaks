@@ -195,7 +195,7 @@
 	-webkit-tap-highlight-color: transparent;
 	padding-top: var(--message-spacing-y);
 	padding-bottom: var(--message-spacing-y);
-	padding-left: calc(var(--chat-horizontal-padding, var(--message-gutter)) + var(--message-compact-indent));
+	padding-left: calc(var(--chat-horizontal-padding, var(--message-gutter)));
 	padding-right: var(--chat-horizontal-padding, var(--message-gutter));
 	text-indent: calc(-1 * var(--message-compact-indent));
 	margin-left: calc(-1 * var(--chat-horizontal-padding, var(--message-gutter)));
@@ -1015,6 +1015,7 @@
 
 .compactContentWrapper {
 	line-height: var(--message-line-height);
+	padding-inline-start: var(--message-compact-indent);
 }
 
 .compactInlineContent {
